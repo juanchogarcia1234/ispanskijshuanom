@@ -8,6 +8,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 
 function MyApp({ Component, pageProps }) {
+  //test
   return (
     <ApolloProvider client={client}>
       <Layout>

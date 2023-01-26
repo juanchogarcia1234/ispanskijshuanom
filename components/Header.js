@@ -30,7 +30,7 @@ export default function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">БЛОГ</Nav.Link>
+            <Nav.Link href="/blog-ispanskovo">БЛОГ ИСПАНСКОГО</Nav.Link>
             <Nav.Link href="#home">ГРАММАТИКА</Nav.Link>
             <Nav.Link href="#link">УРОКИ</Nav.Link>
             <Nav.Link href="#link">ПЕРЕВОДЫ</Nav.Link>
