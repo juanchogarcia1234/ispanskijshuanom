@@ -3,6 +3,12 @@ import PostCard from '../../components/PostCard'
 import { getAllPosts } from '../../lib/test-data'
 import { client } from '../../lib/apollo'
 import { gql } from '@apollo/client'
+import { Raleway } from '@next/font/google'
+
+const raleway = Raleway({
+	subsets: ['cyrillic'],
+	weight: '800',
+})
 
 export default function Blog({ posts }) {
 	return (
@@ -10,13 +16,8 @@ export default function Blog({ posts }) {
 			<Head>
 				<title>Блог испанского</title>
 			</Head>
-			<main>
-				<h1>Блог испанского</h1>
-
-				<p className="description">
-					Get started by editing <code>pages/index.js</code>
-				</p>
-
+			<main className="pt-5">
+				<h1 className={raleway.className + ' pb-3'}>Блог испанского</h1>
 				<div>
 					{posts.map((post) => {
 						return <PostCard key={post.uri} post={post}></PostCard>
@@ -42,6 +43,7 @@ export async function getStaticProps() {
 					content
 					uri
 					date
+					excerpt
 				}
 			}
 		}

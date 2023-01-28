@@ -5,6 +5,12 @@ import { getPostByUri } from '../../lib/test-data'
 import { client } from '../../lib/apollo'
 import { gql } from '@apollo/client'
 import { faUser, faCalendar, faTag } from '@fortawesome/free-solid-svg-icons'
+import { Raleway } from '@next/font/google'
+
+const raleway = Raleway({
+	subsets: ['cyrillic'],
+	weight: '800',
+})
 
 export default function SlugPage({ post }) {
 	return (
@@ -14,9 +20,9 @@ export default function SlugPage({ post }) {
 				<link rel="icon" href="favicon.ico"></link>
 			</Head>
 
-			<main>
-				<div className="siteHeader container">
-					<h1 className="title text-left">{post.title}</h1>
+			<main style={{ fontSize: '17px' }} className="container">
+				<div className="siteHeader container" style={{ textAlign: 'center' }}>
+					<h1 className={`title text-left ${raleway.className}`}>{post.title}</h1>
 					<p>
 						<FontAwesomeIcon icon={faUser} />
 						<FontAwesomeIcon icon={faCalendar} />
