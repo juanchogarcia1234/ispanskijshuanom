@@ -20,7 +20,7 @@ export default function SlugPage({ post }) {
 				<link rel="icon" href="favicon.ico"></link>
 			</Head>
 
-			<main style={{ fontSize: '17px' }} className="container rounded-white">
+			<main style={{ fontSize: '17px' }} className="container">
 				<div className="siteHeader container" style={{ textAlign: 'center' }}>
 					<h1 className={`title text-left ${raleway.className}`}>{post.title}</h1>
 					<p>

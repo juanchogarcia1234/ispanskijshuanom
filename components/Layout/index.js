@@ -7,7 +7,7 @@ import { Manrope } from '@next/font/google'
 
 const manrope = Manrope({
 	subsets: ['cyrillic'],
-	weight: '400',
+	weight: 'variable',
 })
 
 export default function Layout({ children }) {
