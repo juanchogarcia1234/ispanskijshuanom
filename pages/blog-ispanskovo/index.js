@@ -12,7 +12,7 @@ const raleway = Raleway({
 
 export default function Blog({ posts }) {
 	return (
-		<div className="container">
+		<div className="container rounded-white">
 			<Head>
 				<title>Блог испанского</title>
 			</Head>

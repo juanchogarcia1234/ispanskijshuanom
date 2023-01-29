@@ -1,7 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faYoutube, faInstagram, faTelegram, faVk } from '@fortawesome/free-brands-svg-icons'
-import { Manrope } from '@next/font/google'
+import { Manrope, Raleway } from '@next/font/google'
+import { WhatsAppWidget } from 'react-whatsapp-widget'
+import 'react-whatsapp-widget/dist/index.css'
+
+const raleway = Raleway({
+	subsets: ['cyrillic'],
+	weight: '800',
+})
 
 const manrope = Manrope({
 	subsets: ['cyrillic'],
@@ -15,7 +22,7 @@ export default function Footer() {
 				<footer class="py-5">
 					<div class="row">
 						<div class="col-6 col-md-2 mb-3">
-							<h5> Полезные ссылки</h5>
+							<h5 className={raleway.className}> Полезные ссылки</h5>
 							<ul class="nav flex-column">
 								<li class="nav-item mb-2">
 									<a href="#" class="nav-link p-0 text-muted">
@@ -26,7 +33,7 @@ export default function Footer() {
 						</div>
 
 						<div class="col-6 col-md-2 mb-3">
-							<h5>Контакты</h5>
+							<h5 className={raleway.className}>Контакты</h5>
 							<ul class="nav flex-column">
 								<li class="nav-item mb-2">
 									<a href="#" class="nav-link p-0 text-muted">
@@ -39,27 +46,6 @@ export default function Footer() {
 									</a>
 								</li>
 							</ul>
-						</div>
-
-						<div class="col-md-5 offset-md-1 mb-3">
-							<form>
-								<h5>Subscribe to our newsletter</h5>
-								<p>Monthly digest of what's new and exciting from us.</p>
-								<div class="d-flex flex-column flex-sm-row w-100 gap-2">
-									<label for="newsletter1" class="visually-hidden">
-										Email address
-									</label>
-									<input
-										id="newsletter1"
-										type="text"
-										class="form-control"
-										placeholder="Email address"
-									/>
-									<button class="btn btn-primary" type="button">
-										Subscribe
-									</button>
-								</div>
-							</form>
 						</div>
 					</div>
 
@@ -90,6 +76,13 @@ export default function Footer() {
 					</div>
 				</footer>
 			</div>
+			<WhatsAppWidget
+				companyName="Испанский с Хуаном"
+				replyTimeText="Отвечаю быстро"
+				message="¡Hola! 👋🏼 Как я могу вам помочь?"
+				phoneNumber="+34662269306"
+				sendButton="Отправить"
+			/>
 		</div>
 	)
 }

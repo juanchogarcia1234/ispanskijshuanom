@@ -5,6 +5,7 @@ body {
     margin: 0;
     font-family: 'Open Sans';
     background-color: #e6f4f169;
+    color: #3f3f3f;
 }
 
 * {
@@ -163,4 +164,13 @@ code {
 
 .container {
     max-width: 1140px;
+}
+
+.rounded-white {
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 26px;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
 }
