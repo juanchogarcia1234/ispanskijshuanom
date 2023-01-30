@@ -17,7 +17,7 @@ export default function SlugPage({ post }) {
 	return (
 		<div>
 			<Head>
-				<title>Headless WP Next Starter</title>
+				<title>{post.title} - Испанский с Хуаном</title>
 			</Head>
 
 			<main style={{ fontSize: '17px' }} className="container rounded-white">

@@ -38,6 +38,9 @@ export default function Header() {
 						<Nav.Link href="/repetitor-ispanskovo-nositel-yazika" className={styles.navLink}>
 							УРОКИ С НОСИТЕЛЕМ
 						</Nav.Link>
+						<Nav.Link href="/zakazat-perevod-na-ispanskij" className={styles.navLink}>
+							ЗАКАЗАТЬ ПЕРЕВОД НА ИСПАНСКИЙ
+						</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>

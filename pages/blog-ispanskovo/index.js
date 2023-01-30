@@ -14,7 +14,7 @@ export default function Blog({ posts }) {
 	return (
 		<div className="container rounded-white">
 			<Head>
-				<title>Блог испанского</title>
+				<title>Блог испанского - Испанский с Хуаном</title>
 			</Head>
 			<main className="pt-5">
 				<h1 className={raleway.className + ' pb-3'}>Блог испанского</h1>

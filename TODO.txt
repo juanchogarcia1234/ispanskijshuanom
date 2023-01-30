@@ -1,0 +1,5 @@
+1) fix width images
+2) Add page navigation in blog feed, 1,2,3
+3) Add category filter
+4) Add related articles
+5) Add links to footer
