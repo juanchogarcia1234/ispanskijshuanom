@@ -6,6 +6,7 @@ body {
     font-family: 'Open Sans';
     background-color: #e6f4f169;
     color: #3f3f3f;
+    /* background-image: url('/images/fondo.jpg'); */
 }
 
 * {
@@ -16,15 +17,6 @@ body {
     --bs-font-sans-serif: "Open Sans",sans-serif;
     --eggplant-gradient: linear-gradient(260.85deg,#7e5cef 10.29%,#002838 89.71%);
 }
- h1 {
-     background: var(--eggplant-gradient);
-     background-clip: text;
-     -webkit-background-clip: text;
-     -moz-background-clip: text;
-     -moz-text-fill-color: transparent;
-     -webkit-text-fill-color: transparent;
- }
-
 
 footer img {
     margin-left: 0.5rem;
@@ -173,4 +165,29 @@ code {
     padding-left: 2rem;
     padding-bottom: 1rem;
     margin-bottom: 2rem;
+}
+
+/*Mobile firsts*/
+.wrapper-reviews {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+}
+
+.review {
+    justify-content: center;
+    display: inherit;
+}
+
+@media (min-width: 640px) {
+    .wrapper-reviews {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper-reviews {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }

@@ -35,26 +35,8 @@ export default function Header() {
 						<Nav.Link href="/blog-ispanskovo" className={styles.navLink}>
 							БЛОГ ИСПАНСКОГО
 						</Nav.Link>
-						<Nav.Link href="#home" className={styles.navLink}>
-							ГРАММАТИКА
-						</Nav.Link>
-						<Nav.Link href="#link" className={styles.navLink}>
-							УРОКИ
-						</Nav.Link>
-						<Nav.Link href="#link" className={styles.navLink}>
-							ПЕРЕВОДЫ
-						</Nav.Link>
-						<Nav.Link href="#link" className={styles.navLink}>
-							ПОДКАСТЫ
-						</Nav.Link>
-						<Nav.Link href="#link" className={styles.navLink}>
-							КУРСЫ
-						</Nav.Link>
-						<Nav.Link href="#link" className={styles.navLink}>
-							МАТЕРИАЛЫ
-						</Nav.Link>
-						<Nav.Link href="#link" className={styles.navLink}>
-							УЧЕБА В ИСПАНИИ
+						<Nav.Link href="/repetitor-ispanskovo-nositel-yazika" className={styles.navLink}>
+							УРОКИ С НОСИТЕЛЕМ
 						</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>

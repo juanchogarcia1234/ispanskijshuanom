@@ -25,12 +25,7 @@ export default function PostCard({ post }) {
 				/>
 				<h2 className={raleway.className}>{post.title}</h2>
 				<div dangerouslySetInnerHTML={{ __html: post.excerpt }}></div>
-				<Button
-					size="lg"
-					style={{ backgroundColor: '#3cb9d7', border: 'none' }}
-					className={raleway.className}
-					href="#"
-				>
+				<Button size="lg" style={{ backgroundColor: '#3cb9d7', border: 'none' }} className={raleway.className}>
 					Читать
 				</Button>
 			</Link>

@@ -13,22 +13,18 @@ const raleway = Raleway({
 })
 
 export default function SlugPage({ post }) {
+	console.log('YES', post)
 	return (
 		<div>
 			<Head>
 				<title>Headless WP Next Starter</title>
-				<link rel="icon" href="favicon.ico"></link>
 			</Head>
 
 			<main style={{ fontSize: '17px' }} className="container rounded-white">
 				<div className="siteHeader container" style={{ textAlign: 'center' }}>
 					<h1 className={`title text-left ${raleway.className}`}>{post.title}</h1>
 					<p>
-						<FontAwesomeIcon icon={faUser} />
-						<FontAwesomeIcon icon={faCalendar} />
-						<FontAwesomeIcon icon={faTag} />
-						&nbsp;&nbsp;
-						{`${post.author.node.firstName} ${post.author.node.lastName}`} | 🗓️ &nbsp;&nbsp;
+						✍️ &nbsp;{`${post.author.node.firstName} ${post.author.node.lastName}`} | 🗓️ &nbsp;
 						{new Date(post.date).toLocaleDateString()}
 					</p>
 					<Image
