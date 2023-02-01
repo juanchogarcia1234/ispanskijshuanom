@@ -64,7 +64,7 @@ export default function Uroki({ posts }) {
 					<p>1 урок - 25€. 8 уроков - 160€</p>
 					<h3 className={raleway.className}>Отзывы</h3>
 					<br />
-					<div class="wrapper-reviews">
+					<div className="wrapper-reviews">
 						<div className="review">
 							<iframe
 								src="https://www.youtube.com/embed/ZV8NcULLwNo"

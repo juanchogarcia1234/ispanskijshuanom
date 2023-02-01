@@ -1,0 +1,11 @@
+.authorImageWrapper {
+	position: relative;
+	aspect-ratio: 1 / 1;
+	max-width: 100%;
+    width: 775px;
+    max-height: 385px;
+}
+
+.authorImage {
+	object-fit: cover;
+}
