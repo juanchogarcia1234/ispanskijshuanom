@@ -112,8 +112,10 @@ export default function Uroki({ posts }) {
 						</div>
 					</div>
 					<br />
-					<Image src="/images/diploma.jpeg" width={1240} height={935}></Image>
-					<Image src="/images/ruso.jpeg" width={800} height={550}></Image>
+					<div style={{ position: 'relative' }}>
+						<Image src="/images/diploma.jpeg" fill style={{ objectFit: 'cover' }} />
+						<Image src="/images/ruso.jpeg" fill />
+					</div>
 				</div>
 			</main>
 		</div>

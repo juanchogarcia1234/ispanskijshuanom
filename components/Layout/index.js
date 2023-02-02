@@ -6,7 +6,7 @@ import Head from 'next/head'
 import { Manrope } from '@next/font/google'
 
 const manrope = Manrope({
-	subsets: ['cyrillic'],
+	subsets: ['cyrillic', 'latin'],
 	weight: 'variable',
 })
 
@@ -15,6 +15,7 @@ export default function Layout({ children }) {
 		<>
 			<Head>
 				<link rel="icon" href="favicon.ico"></link>
+				<meta name="robots" content="noindex"></meta>
 			</Head>
 			<Header />
 			<main className={manrope.className}>{children}</main>
