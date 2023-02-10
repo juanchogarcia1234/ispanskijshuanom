@@ -16,6 +16,7 @@ export default function Layout({ children }) {
 			<Head>
 				<link rel="icon" href="favicon.ico"></link>
 				<meta name="robots" content="noindex"></meta>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 			</Head>
 			<Header />
 			<main className={manrope.className}>{children}</main>

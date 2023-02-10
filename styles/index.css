@@ -66,7 +66,7 @@ a {
     background: none;
     -moz-text-fill-color: rgb(63 63 63);
     -webkit-text-fill-color: rgb(63 63 63);
-    font-size: 45px;
+    font-size: 37px;
 }
 
 article {
@@ -184,6 +184,13 @@ code {
 @media (min-width: 640px) {
     .wrapper-reviews {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .siteHeader .title { 
+        background: none;
+        -moz-text-fill-color: rgb(63 63 63);
+        -webkit-text-fill-color: rgb(63 63 63);
+        font-size: 45px;
     }
 }
 
