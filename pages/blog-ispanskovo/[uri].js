@@ -23,7 +23,7 @@ export default function SlugPage({ post }) {
 			</Head>
 
 			<main style={{ fontSize: '17px' }} className="container rounded-white">
-				<div className="siteHeader mb-0 container" style={{ textAlign: 'center' }}>
+				<div className="siteHeader mb-0 container" style={{ textAlign: 'center', maxWidth: '850px' }}>
 					<h1 className={`title text-left ${raleway.className}`}>{post.title}</h1>
 					<p>
 						✍️ &nbsp;{`${post.author.node.firstName} ${post.author.node.lastName}`} | 🗓️ &nbsp;
