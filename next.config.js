@@ -1,11 +1,12 @@
 // next.config.js
 module.exports = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "one2oner.com",
-      },
-    ],
-  },
-};
+	images: {
+		unoptimized: true,
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'one2oner.com',
+			},
+		],
+	},
+}

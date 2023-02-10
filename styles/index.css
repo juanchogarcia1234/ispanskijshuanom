@@ -77,7 +77,7 @@ article {
 }
 
 article img {
-    width: 100%;
+    max-width: 100%;
 }
 
 img {
@@ -148,6 +148,7 @@ code {
 
 .navbar {
     border-bottom: 1px solid #dddddd40;
+    box-shadow: 0px 4px 30px rgba(59, 68, 89, 0.16);
 }
 
 .navbar a {
