@@ -6,6 +6,8 @@ import { client } from '../../lib/apollo'
 import { gql } from '@apollo/client'
 import { faUser, faCalendar, faTag } from '@fortawesome/free-solid-svg-icons'
 import { Raleway } from '@next/font/google'
+import RelatedCard from '../../components/RelatedCard'
+import ImageFill from '../../components/ImageFill'
 
 const raleway = Raleway({
 	subsets: ['cyrillic'],
@@ -21,24 +23,29 @@ export default function SlugPage({ post }) {
 			</Head>
 
 			<main style={{ fontSize: '17px' }} className="container rounded-white">
-				<div className="siteHeader container" style={{ textAlign: 'center' }}>
+				<div className="siteHeader mb-0 container" style={{ textAlign: 'center' }}>
 					<h1 className={`title text-left ${raleway.className}`}>{post.title}</h1>
 					<p>
 						✍️ &nbsp;{`${post.author.node.firstName} ${post.author.node.lastName}`} | 🗓️ &nbsp;
 						{new Date(post.date).toLocaleDateString()}
 					</p>
-					<Image
+					<ImageFill
+						alt="test"
 						src={post.featuredImage.node.sourceUrl}
-						width={770}
-						height={385}
-						alt="Your Name"
-						sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
+						aspectRatio="2 / 1"
+						className="mb-3 mx-auto"
 					/>
 				</div>
 
-				<article dangerouslySetInnerHTML={{ __html: post.content }}></article>
+				<article className="mb-5" dangerouslySetInnerHTML={{ __html: post.content }}></article>
+				<hr />
+				<h3 className={`text-center mt-5 ${raleway.className}`}>Похожие статьи</h3>
+
+				<div className="d-flex flex-wrap flex-md-nowrap flex-row justify-content-around">
+					<RelatedCard />
+					<RelatedCard />
+					<RelatedCard />
+				</div>
 			</main>
 		</div>
 	)

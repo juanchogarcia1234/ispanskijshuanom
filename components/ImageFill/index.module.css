@@ -1,0 +1,16 @@
+.imageWrapper {
+	position: relative;
+	aspect-ratio: var(--aspect-ratio);
+}
+
+.image {
+	object-fit: cover;
+}
+
+.rounded {
+	border-radius: 25px;
+}
+
+.circle {
+	border-radius: 50%;
+}

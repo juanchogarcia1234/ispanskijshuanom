@@ -5,6 +5,7 @@ import { getAllPosts } from '../lib/test-data'
 import { client } from '../lib/apollo'
 import { gql } from '@apollo/client'
 import { Raleway } from '@next/font/google'
+import ImageFill from '../components/ImageFill'
 
 const raleway = Raleway({
 	subsets: ['cyrillic'],
@@ -32,12 +33,12 @@ export default function Uroki({ posts }) {
 						язык онлайн и сотрудничаю с Центром Пикассо в Риге. Хотите начать говорить по-испански?
 						Записывайтесь на мои занятия!
 					</p>
-					<Image
-						style={{ maxWidth: '100%' }}
+					<ImageFill
+						alt="test"
 						src="/images/ispanskijshuanom-urok.jpeg"
-						width={1070}
-						height={803}
-					></Image>
+						aspectRatio="4 / 3"
+						className="mb-3 mx-auto"
+					/>
 					<h2 className={raleway.className + ' mb-2 mt-4'}>Уроки испанского онлайн со мной</h2>
 					<p>
 						В любом месте и в удобное время —Занимайтесь из дома, на работе, в путешествии — с компьютера
