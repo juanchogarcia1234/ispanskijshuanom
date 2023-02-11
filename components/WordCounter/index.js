@@ -37,7 +37,7 @@ function WordCounter() {
 			<h2 className={raleway.className + ' pt-3'}>Расчет стоимости документа</h2>
 			<p>
 				Если вы хотите получить перевод на испанский язык, пожалуйста, напишите мне по адресу
-				<strong> juangarciaramos92@gmail.com</strong>.
+				<strong> ispanskijshuanom@mail.ru</strong>.
 			</p>{' '}
 			<p>💰 Цена: 0,10€/слово</p>
 			<textarea

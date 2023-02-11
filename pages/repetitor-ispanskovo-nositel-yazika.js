@@ -56,13 +56,9 @@ export default function Uroki({ posts }) {
 					</p>
 					<h3 className={raleway.className}>Цены</h3>
 					<p>1 урок - 25€. 8 уроков - 160€</p>
-					<h3 className={raleway.className}>Записаться на первый урок</h3>
-					<p>
-						Начните изучать испанский Познакомимся, определим уровень, поставим цели и пройдем вводное
-						занятие. Напишите мне на: ispanskijshuanom@mail.ru
-					</p>
-					<h3 className={raleway.className}>Книги, с которыми я работаю</h3>
-					<p>1 урок - 25€. 8 уроков - 160€</p>
+
+					{/* <h3 className={raleway.className}>Книги, с которыми я работаю</h3> */}
+
 					<h3 className={raleway.className}>Отзывы</h3>
 					<br />
 					<div className="wrapper-reviews">
@@ -113,10 +109,15 @@ export default function Uroki({ posts }) {
 						</div>
 					</div>
 					<br />
-					<div style={{ position: 'relative' }}>
-						<Image src="/images/diploma.jpeg" fill style={{ objectFit: 'cover' }} />
-						<Image src="/images/ruso.jpeg" fill />
-					</div>
+
+					<h3 className={raleway.className}>Дипломы</h3>
+					<ImageFill alt="test" src="/images/diploma.jpeg" aspectRatio="4 / 3" className="mb-3 mx-auto" />
+					<ImageFill alt="test" src="/images/ruso.jpeg" aspectRatio="4 / 3" className="mb-3 mx-auto" />
+					<h3 className={raleway.className}>Записаться на первый урок</h3>
+					<p>
+						Начните изучать испанский Познакомимся, определим уровень, поставим цели и пройдем вводное
+						занятие. Напишите мне на: ispanskijshuanom@mail.ru
+					</p>
 				</div>
 			</main>
 		</div>

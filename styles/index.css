@@ -76,6 +76,10 @@ article {
     color: #6c757d !important;
 }
 
+article a {
+    color: #24b9d7;
+}
+
 article img {
     max-width: 100%;
 }
