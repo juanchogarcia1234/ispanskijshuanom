@@ -12,7 +12,7 @@ const raleway = Raleway({
 export default function PostCard({ post }) {
 	return (
 		<>
-			<div className={styles.authorImageWrapper + ' mb-5'}>
+			<div className={styles.authorImageWrapper + ' mb-5 noHover'}>
 				<Link href={`/blog-ispanskovo${post.uri}`}>
 					<div className={styles.authorImageWrapper + ' mb-3'}>
 						<Image

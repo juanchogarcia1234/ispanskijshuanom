@@ -4,6 +4,9 @@ import { getAllPosts } from '../../lib/test-data'
 import { client } from '../../lib/apollo'
 import { gql } from '@apollo/client'
 import { Raleway } from '@next/font/google'
+import PaginationWrapper from '../../components/Pagination'
+import { Container, Row, Col } from 'react-bootstrap'
+import Product from '../../components/Product'
 
 const raleway = Raleway({
 	subsets: ['cyrillic'],
@@ -17,12 +20,22 @@ export default function Blog({ posts }) {
 				<title>Блог испанского - Испанский с Хуаном</title>
 			</Head>
 			<main className="pt-5">
-				<h1 className={raleway.className + ' pb-3'}>Блог испанского</h1>
-				<div>
-					{posts.map((post) => {
-						return <PostCard key={post.uri} post={post}></PostCard>
-					})}
-				</div>
+				<Container>
+					<Row>
+						<Col>
+							<h1 className={raleway.className + ' pb-3'}>Блог испанского</h1>
+							<div>
+								{posts.map((post) => {
+									return <PostCard key={post.uri} post={post}></PostCard>
+								})}
+							</div>
+						</Col>
+						<Col className="mt-4">
+							<Product />
+						</Col>
+					</Row>
+					<PaginationWrapper />
+				</Container>
 			</main>
 		</div>
 	)

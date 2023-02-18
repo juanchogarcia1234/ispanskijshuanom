@@ -41,9 +41,9 @@ export default function Header() {
 						<Nav.Link href="/zakazat-perevod-na-ispanskij" className={styles.navLink}>
 							ЗАКАЗАТЬ ПЕРЕВОД НА ИСПАНСКИЙ
 						</Nav.Link>
-						<Nav.Link href="/zakazat-perevod-na-ispanskij" className={styles.navLink}>
+						{/* <Nav.Link href="/zakazat-perevod-na-ispanskij" className={styles.navLink}>
 							РАЗГОВОРНЫЙ КЛУБ
-						</Nav.Link>
+						</Nav.Link> */}
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
