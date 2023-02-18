@@ -25,7 +25,7 @@ const Viewer = () => {
 			<img
 				src="images/СПРАВОЧНИК-ПО-НЕПРАВИЛЬНЫМ-ГЛАГОЛАМ-НАСТОЯЩЕГО-В-ИСПАНСКОМ.jpg"
 				width="100%"
-				style={{ margin: '2px', minWidth: '400px' }}
+				style={{ margin: '2px', minWidth: '300px' }}
 				alt=""
 				className="mb-4"
 			/>
