@@ -20,13 +20,15 @@ const Product = () => {
 
 			<h5 className={raleway.className + ' pt-3'}>Приобретай сейчас!</h5>
 			<p>Нет ли у тебя способа выучить неправильные глаголы? Тогда приобрети этот справочник</p>
-			<Button
-				size="lg"
-				style={{ backgroundColor: '#00A98A', border: 'none', width: '100%' }}
-				className={raleway.className + ' rounded-4'}
-			>
-				<Link href="/spravochnik-po-nepravilnym-glagolam-nastoyasshego-v-ispanskom">Смотреть</Link>
-			</Button>
+			<Link href="/spravochnik-po-nepravilnym-glagolam-nastoyasshego-v-ispanskom">
+				<Button
+					size="lg"
+					style={{ backgroundColor: '#00A98A', border: 'none', width: '100%' }}
+					className={raleway.className + ' rounded-4'}
+				>
+					Смотреть
+				</Button>
+			</Link>
 		</div>
 	)
 }

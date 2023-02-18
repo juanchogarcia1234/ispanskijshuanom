@@ -19,6 +19,7 @@
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
     "react-simple-image-viewer": "^1.2.2",
-    "react-whatsapp-widget": "^2.1.0"
+    "react-whatsapp-widget": "^2.1.0",
+    "stripe": "^11.11.0"
   }
 }

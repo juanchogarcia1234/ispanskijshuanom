@@ -35,13 +35,15 @@ export default function Spravochnik({ posts }) {
 							версий. Некоторые версии появились по ошибке, некоторые - намеренно (например,
 							юмористические варианты).
 						</p>
-						<Button
-							size="lg"
-							style={{ backgroundColor: '#00A98A', border: 'none', width: '100%' }}
-							className={raleway.className + ' rounded-4'}
-						>
-							<Link href="/spravochnik-po-nepravilnym-glagolam-nastoyasshego-v-ispanskom">Купить</Link>
-						</Button>
+						<Link href="/api/checkout">
+							<Button
+								size="lg"
+								style={{ backgroundColor: '#00A98A', border: 'none', width: '100%' }}
+								className={raleway.className + ' rounded-4'}
+							>
+								Купить
+							</Button>
+						</Link>
 					</Col>
 				</Row>
 			</Container>
