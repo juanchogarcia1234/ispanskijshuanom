@@ -19,12 +19,12 @@ export default function SlugPage({ post }) {
 	return (
 		<div>
 			<Head>
-				<title>{post.title} - Испанский с Хуаном</title>
+				<title>{post?.title} - Испанский с Хуаном</title>
 			</Head>
 
 			<main style={{ fontSize: '17px' }} className="container rounded-white">
 				<div className="siteHeader mb-0 container" style={{ textAlign: 'center', maxWidth: '850px' }}>
-					<h1 className={`title text-left ${raleway.className}`}>{post.title}</h1>
+					<h1 className={`title text-left ${raleway.className}`}>{post?.title}</h1>
 					<p>
 						✍️ &nbsp;{`${post.author.node.firstName} ${post.author.node.lastName}`} | 🗓️ &nbsp;
 						{new Date(post.date).toLocaleDateString()}
