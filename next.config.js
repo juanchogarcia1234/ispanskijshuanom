@@ -25,6 +25,11 @@ module.exports = {
 				destination: '/blog-ispanskovo/voprositelnye-slova-v-ispanskom-yazyke',
 				permanent: true,
 			},
+			{
+				source: '/blog-ispanskovo/kolichestvennye-i-poryadkovye-chislitelnye-v-.html',
+				destination: '/blog-ispanskovo/kolichestvennye-i-poryadkovye-chislitelnye-v-',
+				permanent: true,
+			},
 		]
 	},
 }
