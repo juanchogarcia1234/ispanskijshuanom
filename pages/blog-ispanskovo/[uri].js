@@ -20,6 +20,7 @@ export default function SlugPage({ post }) {
 		<div>
 			<Head>
 				<title>{post?.title} - Испанский с Хуаном</title>
+				<meta name="description" content={post.seo.metaDesc} />
 			</Head>
 
 			<main style={{ fontSize: '17px' }} className="container rounded-white">
@@ -59,6 +60,12 @@ export async function getStaticProps({ params }) {
 				content
 				date
 				uri
+				seo {
+					canonical
+					metaDesc
+					title
+					fullHead
+				}
 				featuredImage {
 					node {
 						sourceUrl(size: LARGE)
