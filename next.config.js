@@ -21,6 +21,16 @@ module.exports = {
 	async redirects() {
 		return [
 			{
+				source: '/blog-ispanskovo/dialog-na-ispanskom-6-en-el-medico-u-vracha.html',
+				destination: '/blog-ispanskovo/dialog-na-ispanskom-6-en-el-medico-u-vracha',
+				permanent: true,
+			},
+			{
+				source: '/blog-ispanskovo/dialog-na-ispanskom-compras-pokupki.html',
+				destination: '/blog-ispanskovo/dialog-na-ispanskom-compras-pokupki',
+				permanent: true,
+			},
+			{
 				source: '/blog-ispanskovo/spryazhenie-pravilnykh-glagolov-v-ispanskom.html',
 				destination: '/blog-ispanskovo/spryazhenie-pravilnykh-glagolov-v-ispanskom',
 				permanent: true,
