@@ -2,7 +2,7 @@
 // with Sentry.
 // https://nextjs.org/docs/api-reference/next.config.js/introduction
 // https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/
-const { withSentryConfig } = require('@sentry/nextjs');
+const { withSentryConfig } = require('@sentry/nextjs')
 
 // next.config.js
 module.exports = {
@@ -20,6 +20,11 @@ module.exports = {
 	},
 	async redirects() {
 		return [
+			{
+				source: '/blog-ispanskovo/spryazhenie-pravilnykh-glagolov-v-ispanskom.html',
+				destination: '/blog-ispanskovo/spryazhenie-pravilnykh-glagolov-v-ispanskom',
+				permanent: true,
+			},
 			{
 				source: '/blog-ispanskovo/glagoly-individualnogo-spryazheniya-ser-i-est.html',
 				destination: '/blog-ispanskovo/glagoly-individualnogo-spryazheniya-ser-i-est',
@@ -39,8 +44,4 @@ module.exports = {
 	},
 }
 
-module.exports = withSentryConfig(
-  module.exports,
-  { silent: true },
-  { hideSourcemaps: true },
-);
+module.exports = withSentryConfig(module.exports, { silent: true }, { hideSourcemaps: true })
